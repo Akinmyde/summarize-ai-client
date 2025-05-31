@@ -12,7 +12,7 @@ const App = () => {
   const fetchSummary = useCallback(async () => {
     setLoading(true);
     try {
-      const scrapeRes = await axios.post("http://localhost:3000/api", {
+      const scrapeRes = await axios.post(import.meta.env.VITE_API_URL || "http://localhost:3000/api", {
         url,
         model: "ollama",
       });

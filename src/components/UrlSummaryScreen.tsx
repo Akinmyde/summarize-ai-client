@@ -73,15 +73,6 @@ const UrlSummaryScreen = ({ summary, onBack }: UrlSummaryScreenProps) => {
           <p className="text-xs text-gray-500 mb-4">
             Note that the sentiment analysis is based on a subjective evaluation of the website content and may not reflect the actual opinions or emotions of visitors.
           </p>
-          {/* <h3 className="font-bold mb-2">Visual Highlights</h3>
-          <div className="mb-4">
-            <img
-              src={summary.image}
-              alt="Visual highlight"
-              className="rounded-xl w-full object-cover h-40"
-            />
-          </div> */}
-          {/* Products/Services Section */}
           <h3 className="font-bold mb-2">Products/Services</h3>
           <div className="mb-4">
             {Array.isArray(summary.products) ? (
@@ -101,7 +92,7 @@ const UrlSummaryScreen = ({ summary, onBack }: UrlSummaryScreenProps) => {
               <p className="text-gray-400 italic">No products or services found.</p>
             )}
           </div>
-          <h3 className="font-bold mb-2">Language</h3>
+          {/* <h3 className="font-bold mb-2">Language</h3>
           <select
             value={language}
             onChange={e => setLanguage(e.target.value)}
@@ -110,8 +101,7 @@ const UrlSummaryScreen = ({ summary, onBack }: UrlSummaryScreenProps) => {
             <option value="English">English</option>
             <option value="Spanish">Spanish</option>
             <option value="French">French</option>
-            {/* Add more languages as needed */}
-          </select>
+          </select> */}
         </div>
       </div>
     </div>
