@@ -1,4 +1,4 @@
-import { useState } from "react";
+// import { useState } from "react";
 import Summary from "./Summary";
 import type { ISummary } from "../types/ISummary";
 
@@ -8,7 +8,7 @@ interface UrlSummaryScreenProps {
 }
 
 const UrlSummaryScreen = ({ summary, onBack }: UrlSummaryScreenProps) => {
-  const [language, setLanguage] = useState('English');
+  // const [language, setLanguage] = useState('English');
 
   return (
     <div className="flex flex-col items-center w-full min-h-screen bg-gray-50 p-4">
